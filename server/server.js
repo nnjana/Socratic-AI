@@ -16,11 +16,13 @@ import { verifyToken } from './src/middleware/authMiddleware.js';
 const app = express();
 app.use(cors());
 
+// updated
 
 // Global Middleware
 app.use(express.json());
 
 // Simple Health Check
+console.log("updated")
 app.get('/health', (req, res) => {
     res.status(200).json({ status: 'Modular Engine is running.' });
 });
